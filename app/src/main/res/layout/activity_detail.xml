@@ -42,8 +42,17 @@
         android:layout_below="@id/strContent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Value Title Goes Here..."/>
+        android:text="Value Content Goes Here..."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/content"/>
 
     <TextView
         android:id="@+id/createdDate"
@@ -51,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/content"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:text="Created Date"/>
 
     <TextView
@@ -60,6 +70,7 @@
         android:layout_below="@id/content"
         android:layout_marginLeft="20dp"
         android:text="Due Date"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/createdDate"/>
 
     <TextView
@@ -68,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/content"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:text="Last Update"
         android:layout_toRightOf="@id/dueDate"/>
 </RelativeLayout>
